@@ -1,6 +1,7 @@
 FROM alpine:3.22.1 AS certs
 
 RUN apk add ca-certificates
+RUN apk add wget
 
 FROM scratch
 WORKDIR /
